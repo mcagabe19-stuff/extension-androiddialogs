@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-        <section if="android" />
+        <section if="android" >
 	<dependency name="androiddialogs" path="project/androiddialogs" />
 	<android extension="org.haxe.extension.AndroidDialogs" />
         </section>

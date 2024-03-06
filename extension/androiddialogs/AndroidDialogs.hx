@@ -30,16 +30,16 @@ class AndroidDialogs {
 	public static function showAlertSelectOption(title:String = "Title", listItems:Array<String>):Void
 		showAlertSelectOption_jni(title, listItems, haxeObj);
 
-	public static function showAlertMultipleSelectOption(title:String = "Title", listItems:Array<String>):Void {
+	public static function showAlertMultipleSelectOption(title:String = "Title", listItems:Array<String>):Void
 		showAlertMultipleSelectOption_jni(title, listItems, haxeObj);
 }
 
-private class CallbackHandler {
+@:noCompletion private class CallbackHandler {
 	public var answerDialog:String;
 	public var answerOptionSelected:String;
 	public var answersOptionsMultipleSelected:Array<String>;
 
-	public function new() {}
+        public function new() {}
 
 	public function onMessageReceived(msg:String):Void
 		answerDialog = msg;
