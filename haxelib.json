@@ -1,12 +1,12 @@
 {
-  "name": "AndroidDialogs",
-  "url": "https://github.com/nicolastuka/AndroidDialogs",
+  "name": "extension-androiddialogs",
+  "url": "https://github.com/mcagabe19-stuff/extension-androiddialogs"",
   "license": "MIT",
   "tags": [],
-  "description": "Helper to implements UI Dialogs and Toast on Android",
+  "description": "First Release.",
   "version": "1.0.0",
   "releasenote": "",
-  "contributors": ["nicolastuka"],
+  "contributors": ["mcagabe19"],
   "dependencies": {
 
   }
