@@ -54,7 +54,7 @@ public class AndroidDialogs extends Extension {
 	//for callbacks result
 	private static HaxeObject objHaxe = null;
 	
-	public static void ShowToast (String msg, int d) {
+	public static void showToast (String msg, int d) {
 		messageAlert = msg;
 		if (d == 1) {
 			duration = Toast.LENGTH_SHORT;
@@ -71,7 +71,7 @@ public class AndroidDialogs extends Extension {
         });
 	}
 
-	public static void ShowAlertDialog (String t, String msg, String conftext, String cltext, HaxeObject hxo) {
+	public static void showAlertDialog (String t, String msg, String conftext, String cltext, HaxeObject hxo) {
 		title = t;
 		messageToast = msg;
 		confirmtext = conftext;
@@ -101,7 +101,7 @@ public class AndroidDialogs extends Extension {
         });
 	}
 
-	public static void ShowDialogSelectSimpleRadio (String t, String[] op, HaxeObject hxo) {
+	public static void showDialogSelectSimpleRadio (String t, String[] op, HaxeObject hxo) {
 		final String[] items = new String[op.length];
 		for (int i = 0; i < op.length; i++) {
 			items[i] = op[i];
@@ -123,7 +123,7 @@ public class AndroidDialogs extends Extension {
         });
 	}
 
-	public static void ShowDialogSelectMultiple (String t, String[] op, HaxeObject hxo) {
+	public static void showDialogSelectMultiple (String t, String[] op, HaxeObject hxo) {
 		final String[] items = new String[op.length];
 		final boolean[] selecteds = new boolean[op.length];
 		for (int i = 0; i < op.length; i++) {
